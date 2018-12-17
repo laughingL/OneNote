@@ -51,16 +51,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:id="@+id/rg">
+            android:id="@+id/type_rg">
             <RadioButton
+                android:id="@+id/type_work"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/type_work" />
             <RadioButton
+                android:id="@+id/type_life"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/type_life" />
             <RadioButton
+                android:id="@+id/type_others"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/type_others" />

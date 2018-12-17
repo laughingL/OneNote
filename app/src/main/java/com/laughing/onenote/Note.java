@@ -5,9 +5,18 @@ import java.util.UUID;
 public class Note {
     private UUID mId;
     private String mTitle;
+    private String mLocation;
     private String mText;
     private String mType;
     private String mDate;
+
+    public String getLocation() {
+        return mLocation;
+    }
+
+    public void setLocation(String location) {
+        mLocation = location;
+    }
 
     public Note(UUID id) {
         mId = id;

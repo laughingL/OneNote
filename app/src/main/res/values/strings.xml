@@ -4,4 +4,13 @@
     <string name="pwd_hint">密码</string>
     <string name="login_button">登录</string>
     <string name="login_wrong">用户名密码错误</string>
+    <string name="AddNote">添加笔记</string>
+    <string name="note_title">笔记标题</string>
+    <string name="note_text_view">笔记内容</string>
+    <string name="note_type_view">笔记分类</string>
+    <string name="type_life">生活</string>
+    <string name="type_work">工作</string>
+    <string name="type_others">其他</string>
+    <string name="date_view">选择日期</string>
+    <string name="note_location">地点</string>
 </resources>

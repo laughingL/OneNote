@@ -13,4 +13,5 @@
     <string name="type_others">其他</string>
     <string name="date_view">选择日期</string>
     <string name="note_location">地点</string>
+    <string name="add_wrong">添加笔记失败</string>
 </resources>

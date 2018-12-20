@@ -1,4 +1,4 @@
-﻿package com.laughing.onenote;
+package com.laughing.onenote;
 
 import android.content.ContentValues;
 import android.content.Context;

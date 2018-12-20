@@ -85,7 +85,11 @@ public class AddActivity extends AppCompatActivity {
                         note.setText(mText);
                         note.setType(mType);
                         note.setDate(mDate);
-                        //装入NoteLab写入数据库
+                        //获取NoteLab
+                        NoteLab noteLab = NoteLab.get(AddActivity.this);
+                        //将Note存进数据库
+                        noteLab.addNote(note);
+                        //TODO
                     }else {
                         //输出错误信息
                         Toast.makeText(AddActivity.this, R.string.add_wrong, Toast.LENGTH_SHORT).show();

@@ -25,6 +25,7 @@ public class AddActivity extends AppCompatActivity {
     private EditText mLocationEditText;
     private EditText mTextEditText;
     private RadioGroup mRadioGroup;
+    private RadioButton[] mRadioButtons;
     private Button mDateButton;
     private Calendar mCalendar;
 
@@ -93,6 +94,10 @@ public class AddActivity extends AppCompatActivity {
             }
         });
         //笔记类型控件
+        mRadioButtons[0] = findViewById(R.id.type_work);
+        mRadioButtons[1] = findViewById(R.id.type_life);
+        mRadioButtons[2] = findViewById(R.id.type_others);
+        updateType();
         mRadioGroup = findViewById(R.id.type_rg);
         mRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -122,6 +127,16 @@ public class AddActivity extends AppCompatActivity {
             }
         });
     }
+
+    private void updateType() {
+        //设置类型的显示
+        for (RadioButton r : mRadioButtons){
+            if (r.getText().toString().trim().equals(mNote.getType())){
+                r.setChecked(true);
+            }
+        }
+    }
+
     //日期按钮初始显示值
     private void updateDate() {
         if (mNote.getDate() != null){

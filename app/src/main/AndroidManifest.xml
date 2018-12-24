@@ -16,7 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddActivity" android:label="@string/AddNote"></activity>
+        <activity
+            android:name=".AddActivity"
+            android:label="@string/AddNote" />
+        <activity android:name=".ListActivity" />
+        <activity android:name=".MenuActivity"></activity>
     </application>
 
 </manifest>

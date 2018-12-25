@@ -9,16 +9,13 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import static com.laughing.onenote.ListActivity.result;
+import static com.laughing.onenote.MenuActivity.result;
+import static com.laughing.onenote.MenuActivity.result;
 
 /**
  * Created by Nick on 2018/12/20.
@@ -46,7 +43,7 @@ public class ListFragment extends Fragment {
             Note note = new Note();
             note.setTitle(i+" -note");
             note.setDate(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
-            note.setType(String.valueOf(result));
+            note.setType(String.valueOf(result));//可以判断result，来按需查询
             noteList.add(note);
         }
         mAdapter = new NoteAdapter(noteList);

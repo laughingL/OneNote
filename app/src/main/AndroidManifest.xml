@@ -20,6 +20,11 @@
             android:name=".AddActivity"
             android:label="@string/AddNote" />
         <activity android:name=".SearchActivity" android:label="@string/SearchDate"></activity>
+        <activity
+            android:name=".AddActivity"
+            android:label="@string/AddNote" />
+        <activity android:name=".ListActivity" />
+        <activity android:name=".MenuActivity"></activity>
     </application>
 
 </manifest>

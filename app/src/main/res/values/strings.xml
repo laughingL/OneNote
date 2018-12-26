@@ -17,4 +17,5 @@
     <string name="search_date">日期格式：YYYY-MM-DD</string>
     <string name="SearchDate">日期查找</string>
     <string name="search_wrong">查询错误</string>
+    <string name="list_fragment_container">list_fragment_container</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.laughing.onenote;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +14,7 @@ import java.util.List;
 public class SearchActivity extends AppCompatActivity {
     private EditText mEditText;
     private Button mButton;
+    private static final String SEARCH_RESULT = "result";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +28,8 @@ public class SearchActivity extends AppCompatActivity {
                 if (!date.equals("")) {
                     List<Note> noteList = getResultList(date);
                     if (noteList.size() != 0){
-                        //TODO
+                        Intent intent = MenuActivity.newIntent(SearchActivity.this,noteList);
+                        startActivity(intent);
                     }else {
                         Toast.makeText(SearchActivity.this,R.string.search_wrong ,Toast.LENGTH_SHORT).show();
                     }

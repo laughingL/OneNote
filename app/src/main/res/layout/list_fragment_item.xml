@@ -11,7 +11,8 @@
         android:layout_height="86dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/note_title"
@@ -66,7 +67,5 @@
             app:layout_constraintStart_toEndOf="@+id/note_type"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
-
     </android.support.constraint.ConstraintLayout>
-
 </android.support.constraint.ConstraintLayout>

@@ -94,6 +94,7 @@ public class AddActivity extends AppCompatActivity {
             }
         });
         //笔记类型控件
+        mRadioButtons = new RadioButton[3];
         mRadioButtons[0] = findViewById(R.id.type_work);
         mRadioButtons[1] = findViewById(R.id.type_life);
         mRadioButtons[2] = findViewById(R.id.type_others);

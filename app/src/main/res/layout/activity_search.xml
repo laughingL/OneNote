@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     android:gravity="center"
     tools:context=".SearchActivity">
-<EditText
-    android:id="@+id/search_date"
-    android:hint="@string/search_date"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/search_date"
+        android:text="@string/date_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     <Button
         android:id="@+id/search_date_button"
         android:hint="@string/SearchDate"

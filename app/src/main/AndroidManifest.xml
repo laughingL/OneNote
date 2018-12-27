@@ -18,8 +18,7 @@
         </activity>
         <activity
             android:name=".AddActivity"
-            android:parentActivityName=".MenuActivity"
-            android:label="@string/AddNote" />
+            android:parentActivityName=".MenuActivity" />
         <activity android:name=".SearchActivity" android:label="@string/SearchDate" android:parentActivityName=".MenuActivity"></activity>
         <!--<activity android:name=".ListActivity" />-->
         <activity android:name=".MenuActivity"></activity>

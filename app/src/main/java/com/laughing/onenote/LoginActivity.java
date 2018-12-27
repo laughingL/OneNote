@@ -34,6 +34,7 @@ public class LoginActivity extends AppCompatActivity {
         String pwd = mPwd.getText().toString().trim();
         if (username.equals(USER_NAME) && pwd.equals(PWD)){
             Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         }else {
             Toast.makeText(this,R.string.login_wrong,Toast.LENGTH_SHORT).show();
